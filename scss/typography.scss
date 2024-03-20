@@ -1,0 +1,283 @@
+/*********************************************/
+/********************TYPOGRAPHY***************/
+/*********************************************/
+
+h1, h2, h3, h4, a {
+    font-family: 'poppins', sans-serif;
+}
+
+p, li, span, label {
+    font-family: 'rubik', sans-serif;
+}
+
+.btn {
+    @include font(1rem, $wit, 500, 1rem, lowercase, center);
+    text-decoration: none;
+
+    @include breakpoint(tablet) { // tablet view
+        font-size: 1.2rem;
+    }
+    @include breakpoint(desktop) { // desktop view
+        font-size: 1.4rem;
+    }
+}
+
+// ========= typografie nav ==========
+
+header nav ul li {
+    a {
+        @include font(1.5rem, $zwart, 600, 1rem, uppercase, left);
+
+        @include breakpoint(desktop) { // tablet view
+            font-size: 0.9rem;
+        }
+    }
+    .active {
+        color: $lightblue;
+    }
+}
+
+// ========= typografie herobanner ==========
+
+.heroBanner {
+    h2 {
+        @include font(1.4rem, $wit, 600, 1.6rem, none, left);
+        text-shadow: 1px 1px 6px $zwartbruin;
+
+        @include breakpoint(tablet) { // tablet view
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+        @include breakpoint(desktop) { // desktop view
+            font-size: 2.4rem
+        }
+    }
+}
+
+// ========= typografie about ==========
+
+.about {
+    h2 {
+        @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+
+        @include breakpoint(tablet) { // tablet view
+            font-size: 1.6rem;
+        }
+    }
+    p {
+        @include font(1rem, $zwartbruin, 500, 1.4rem, none, left);
+
+        @include breakpoint(desktop) { // desktop view
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// ========= typografie coaches ==========
+
+.coaches {
+    h2 {
+        @include font(1.4rem, $wit, 600, 1.4rem, none, left);
+
+        @include breakpoint(tablet) { // tablet view
+            font-size: 1.6rem;
+        }
+    }
+    p {
+        @include font(1rem, $wit, 300, 1.4rem, none, left);
+
+        @include breakpoint(desktop) { // desktop view
+            font-size: 0.9rem;
+        }
+    }
+    .card {
+        h3 {
+            @include font(1.2rem, $wit, 500, 1.4rem, none, center);
+
+            @include breakpoint(tablet) { // tablet view
+                font-size: 1.4rem;
+                text-align: right;
+            }
+            @include breakpoint(desktop) { // desktop view
+                font-size: 1.2rem;
+            }
+        }
+        span {
+            @include font(0.8rem, $wit, 300, 1.4rem, none, center);
+
+            @include breakpoint(tablet) { // tablet view
+                text-align: right;
+            }
+        }
+        p {
+            @include font(1rem, $wit, 300, 1.4rem, none, center);
+
+            @include breakpoint(tablet) { // tablet view
+                text-align: left;
+            }
+            @include breakpoint(desktop) { // desktop view
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// ========= typografie forms ==========
+
+.forms {
+    h2 {
+        @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+
+        @include breakpoint(tablet) { // tablet view
+            @include font(1.6rem, $zwart, 600, 1.4rem, none, left);
+        }
+    }
+}
+
+// ========= typografie footer ==========
+
+footer {
+    h3 {
+        @include font(1.4rem, $wit, 600, 1.4rem, none, left);
+
+        @include breakpoint(tablet) { // tablet view
+            @include font(1.6rem, $wit, 600, 1.4rem, none, left);
+        }
+    }
+    li {
+        @include font(1rem, $wit, 300, 1.4rem, none, left);
+    }
+    .navFooter {
+        a {
+            @include font(1rem, $wit, 300, 1.4rem, none, left);
+        }
+
+    }
+    .copyright {
+        span {
+            @include font(0.8rem, $wit, 300, 1.4rem, none, center); 
+
+            @include breakpoint(tablet) { // tablet view
+                @include font(0.9rem, $wit, 300, 1.4rem, none, center); 
+            }
+        }
+    }
+}
+
+// ========= typografie andere pagina's ==========
+
+#coachesPage {
+    .about {
+        p {
+            @include breakpoint(tablet) { // tablet view
+                @include font(1.1rem, $zwartbruin, 500, 1.4rem, none, center);
+            }
+        }
+    }
+}
+
+// ========= typografie contactpagina ==========
+
+#contactPage {
+    h2 {
+        @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+    }
+    p, li {
+        @include font(1rem, $zwartbruin, 500, 1.4rem, none, left);
+    }
+    .contactDetails {
+        h2 {
+            @include font(1.4rem, $wit, 600, 1.4rem, none, left);
+        }
+        p {
+            @include font(1rem, $wit, 500, 1.4rem, none, left);
+        }
+    }
+    footer {
+        li {
+            @include font(1rem, $wit, 500, 1.4rem, none, left);
+        }
+    }
+}
+
+// ========= typografie registerpagina ==========
+
+#registerPage {
+    h2 {
+        @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+
+        @include breakpoint(desktop) { // desktop view
+            font-size: 1.5rem;
+        }
+    }
+    label {
+        @include font(1rem, $zwart, 500, 1.4rem, none, left);
+    }   
+}
+
+// ========= typografie calenderpagina ==========
+
+.timetable {
+    h2 {
+        @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+
+        @include breakpoint(desktop) { // desktop view
+            font-size: 1.5rem;
+        }
+    }
+    p {
+        @include font(1rem, $zwartbruin, 500, 1.4rem, none, left);
+    }
+    .table {
+        h3 {
+            @include font(1.2rem, $zwart, 600, 1.4rem, none, left);
+    
+            @include breakpoint(tablet) { // tablet view
+                @include font(1.4rem, $zwart, 600, 1.4rem, none, left);
+            }
+        }
+        span {
+            @include font(1rem, $zwartbruin, 500, 2rem, none, left);
+        }
+        .tableCard {
+            h4 {
+                @include font(1rem, $wit, 500, 1rem, none, left);
+    
+                @include breakpoint(tablet) { // tablet view
+                    @include font(1.1rem, $wit, 500, 1rem, none, left);
+                }
+            }
+            span {
+                @include font(1rem, $wit, 500, 1rem, none, right);
+            }
+        }
+        .toggle p {
+            @include font(1rem, $wit, 500, 1.4rem, none, left);
+        }
+    }
+}
+
+// ========= typografie popUp ==========
+
+.popUp {
+    h2 {
+        text-align: center;
+        @include font(1.4rem, $zwart, 600, 1.6rem, none, center);
+    }
+    p {
+        text-align: center; 
+        @include font(0.9rem, $zwartbruin, 500, 1.4rem, none, center);
+    }
+}
+
+#registerPage {
+    .popUp {
+        h2 {
+            text-align: center;
+            @include font(1.4rem, $zwart, 600, 1.6rem, none, center);
+        }
+        p {
+            @include font(0.9rem, $zwartbruin, 500, 1.4rem, none, center);
+        }
+    }
+}

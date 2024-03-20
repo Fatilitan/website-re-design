@@ -1,0 +1,9 @@
+@charset 'utf-8';
+
+/* importeren van alle losse scss-bestanden */
+@import '_setup';
+@import '_reset';
+@import 'layout';
+@import 'typography';
+@import 'icons';
+@import '_shame';

@@ -1,0 +1,21 @@
+{
+  "name": "fightiq_project",
+  "version": "1.0.0",
+  "description": "website hermaken voor fightiq. voor nu alleen scss en daarna pas minifyen en uglifyen",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss www/css/main.css --source-map www/css/main.map",
+    "watch-scss":"nodemon --ext scss --exec \"npm run build-css\" ",
+    "develop": "concurrently \"npm:watch-*\" "
+  },
+  "keywords": [
+    "fightiq"
+  ],
+  "author": "Daniel Ekstedt",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

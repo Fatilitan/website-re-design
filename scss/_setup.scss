@@ -1,0 +1,118 @@
+/*********************************************/
+/********************SETUP********************/
+/*********************************************/
+
+// ========== fonts setup ============
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+// ========== variabelen ===========
+// kleuren
+$lightblue: #4794b4;
+$wit: #ffffff;
+$zwartbruin: #363636;
+$grey: #7f8b93;
+$lightgrey: #aebfc9;
+$zwart: #1a1a1a;
+$darkblue: #0a3044;
+
+// ============ breakpoints maken ==============
+
+$breakpoints: (
+    tablet : 768px,
+    desktop : 980px
+);
+
+@mixin breakpoint($point){
+    @if $point == tablet {
+        @media (min-width: #{map-get($breakpoints, $point)}) {
+            @content;
+        }
+    }
+    @else if $point == desktop {
+        @media (min-width: #{map-get($breakpoints, $point)}) {
+            @content;
+        }
+    }
+}
+
+// ========= container setup ===========
+
+.container {
+    margin: 0 auto;
+    width: 380px;
+    @include breakpoint(tablet) {
+        width: 600px;
+    }
+    @include breakpoint(desktop) {
+        width: 900px;
+    }
+}
+
+// ========= Dropdown menu met css maken =========
+
+nav ul {
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    transition: 400ms;
+    width: 100%;
+    background-color: $wit;
+}
+
+#showMenu:checked + ul {
+    height: 100vh;
+}
+
+#showMenuLabel {
+    display: none;
+}
+
+header .container {
+    position: relative;
+}
+
+#showMenu {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+}
+
+/*---hamburger-menu---*/
+
+#showMenu::after {
+    display: block;
+    content: "\2630";
+    font-size: 2rem;
+    color: var(--cuisine-wit);
+    text-align: center;
+}
+
+// ========= Font setup =========
+
+@mixin font($size, $color, $weight, $line, $decoration, $allign) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: $line;
+    text-transform: $decoration;
+    text-align: $allign;
+}
+
+// ========= Flexbox setup =========
+
+%flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}

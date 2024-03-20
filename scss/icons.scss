@@ -1,0 +1,82 @@
+/*********************************************/
+/********************ICONS********************/
+/*********************************************/
+
+footer {
+    .socials {
+        margin-bottom: 4rem;
+        li {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+            a {
+                display: block;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                border: 2px solid $wit;
+                padding: 0.5rem;
+                img {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+.socialsBox {
+    li {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        a {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 2px solid $zwartbruin;
+            padding: 0.5rem;
+            img {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
+    }
+}
+
+/*********************************************/
+/********************ANIMATIES****************/
+/*********************************************/
+
+nav a {
+    transition: 300ms;
+}
+
+nav a:hover {
+    color: $lightblue;
+}
+
+.socials a {
+    transition: 300ms;
+}
+
+.socials a:hover {
+    border-color: $lightblue;
+}
+
+.socialsBox a {
+    transition: 300ms;
+}
+
+.socialsBox a:hover {
+    border-color: $lightblue;
+}
+
+.btn:hover {
+    background-color: #2b708c;
+    border-radius: 0%;
+}

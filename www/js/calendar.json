@@ -1,0 +1,107 @@
+{
+    "cards": [
+        {
+            "location": "mondayMo",
+            "title": "MMA Technique",
+            "time": "12:00 - 13:00",
+            "description": "MMA Techniques and Shoot Boxing with Coach BAM BAM.",
+            "color": "orange"
+        },{
+            "location": "mondayEv",
+            "title": "Kickboxing",
+            "time": "18:00 - 19:00",
+            "description": "Kickboxing with Coach Mo, every Monday at 18:00.",
+            "color": "blue"
+        },{
+            "location": "mondayEv",
+            "title": "No Gi BJJ",
+            "time": "19:00 - 20:00",
+            "description": "No GI BJJ with Coach Emad Ahmedin.",
+            "color": "green"
+        },{
+            "location": "tuesdayMo",
+            "title": "MMA Technique",
+            "time": "12:00 - 13:00",
+            "description": "MMA Techniques and Shoot Boxing with Coach BAM BAM.",
+            "color": "orange"
+        },{
+            "location": "tuesdayEv",
+            "title": "Freestyle Wrestling",
+            "time": "18:00 - 19:00",
+            "description": "Freestyle Wrestling with Coach Adam Al Kandoussi.",
+            "color": "red"
+        },{
+            "location": "tuesdayEv",
+            "title": "No Gi BJJ",
+            "time": "19:00 - 20:00",
+            "description": "No GI BJJ with Coach Emad Ahmedin.",
+            "color": "green"
+        },{
+            "location": "wednesdayMo",
+            "title": "Position Sparring",
+            "time": "12:00 - 13:00",
+            "description": "MMA technique and position sparring with coach Donavan Panayiotis.",
+            "color": "purple"
+        },{
+            "location": "wednesdayEv",
+            "title": "Boxing",
+            "time": "18:00 - 19:00",
+            "description": "Boxing class with Coach Donavan Panayiotis.",
+            "color": "blue"
+        },{
+            "location": "wednesdayEv",
+            "title": "MMA",
+            "time": "19:00 - 20:00",
+            "description": "MMA class with Coach Donavan Panayiotis.",
+            "color": "orange"
+        },{
+            "location": "thursdayMo",
+            "title": "Boxing",
+            "time": "11:00 - 12:00",
+            "description": "Boxing class with Coach Donavan Panayiotis.",
+            "color": "blue"
+        },{
+            "location": "thursdayEv",
+            "title": "Greco-Roman Wrestling",
+            "time": "19:00 - 20:00",
+            "description": "Greco-Roman Wrestling with Coach Kansu Ildem.",
+            "color": "green"
+        },{
+            "location": "fridayMo",
+            "title": "MMA",
+            "time": "12:00 - 13:00",
+            "description": "MMA class with Coach Donavan Panayiotis.",
+            "color": "orange"
+        },{
+            "location": "fridayEv",
+            "title": "MMA Technique",
+            "time": "19:00 - 20:00",
+            "description": "MMA class with Coach Massimo Cappelli.",
+            "color": "purple"
+        },{
+            "location": "saturdayMo",
+            "title": "Inter Gym Sparring",
+            "time": "13:00 - 14:00",
+            "description": "Inter Gym Sparring with Coach Massimo Cappelli.",
+            "color": "red"
+        },{
+            "location": "saturdayEv",
+            "title": "Empty",
+            "time": "",
+            "description": "No lessons this evening",
+            "color": "empty"
+        },{
+            "location": "sundayMo",
+            "title": "Freestyle Wrestling",
+            "time": "13:00 - 14:00",
+            "description": "Freestyle Wrestling with Coach George Ramm.",
+            "color": "red"
+        },{
+            "location": "sundayEv",
+            "title": "Empty",
+            "time": "",
+            "description": "No lessons this evening",
+            "color": "empty"
+        }
+    ]
+}

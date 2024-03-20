@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightIQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="registerPage">
+    <header>
+        <!--div class="container"-->
+            <nav>
+                <a href="#" id="logo"><h1>FightIQ - Smart Martial Arts Amsterdam: MMA, Kickboxing, wrestling & BJJ</h1></a>
+                <label for="showMenu" id="showMenuLabel"></label>
+                <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coaches.html">Coaches</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="register.html" class="active">Register</a></li>
+                </ul>
+            </nav>
+        <!--/div-->
+    </header>
+
+    <section class="formSect">
+        <div class="container">
+
+            <h2>Join Fight IQ, the best place for Martial Arts in Amsterdam</h2>
+
+            <form action="php/main.php" method="post" id="form">
+                <label for="fname">First name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John"><br>
+                <label for="lname">Last name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+        
+                <label for="birthday">Birthday</label><br>
+                <input type="date" id="birthday" name="birthday"><br>
+        
+                <label for="adress">Adress</label><br>
+                <input type="text" id="adress" name="adress" placeholder="streetname 00"><br>
+        
+                <label for="zipcode">Zip code</label><br>
+                <input type="text" id="zipcode" name="zipcode" placeholder="Doe"><br>
+        
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" placeholder="Doe"><br>
+        
+                <label for="gender">Gender</label><br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+        
+                <label for="phone">Phone nr.</label><br>
+                <input type="text" id="phone" name="phone" placeholder="Doe"><br>
+        
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" name="email" placeholder="danielcrackstedt@gmail.com"><br>
+        
+                <label for="membership">Membership</label><br>
+                <select id="membership" name="membership">
+                    <option value="180">3 months - €180</option>
+                    <option value="320">6 months - €320</option>
+                    <option value="600">12 months - €600</option>
+                </select><br>
+        
+                <input type="submit" value="Submit" class="btn" id="verstuur_btn">
+        
+            </form> 
+            
+        </div>
+    </section>
+
+    <section class="popUpScherm">
+        <div class="popUp">
+            <h2>Thank you for your registration!</h2>
+            <p>You will recieve an email with all the further info</p>
+            <button class="btn">Close</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerContainer">
+                <div class="navFooter">
+                    <h3>See more</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="coaches.html">Coaches</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="#" class="active">Register</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info">
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li>+316-57 50 40 80</li>
+                        <li>fightiq@hotmail.com</li>
+                        <li>Van Marwijk Kooystraat 4, 1096 BR Amsterdam</li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h3>Social Profiles</h3>
+                    <ul>
+                        <li><a href="#"><img src="images/icon-fb.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><span>© Copyright 2019 | All Rights Reserved | Fight IQ.</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
